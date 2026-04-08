@@ -21,8 +21,8 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 70, 102, 157),
-        title:  Text("OUTLINED BUTTON"),
+        backgroundColor: const Color.fromARGB(255, 140, 7, 29),
+        title:  Text("OUTLINED BUTTON",style:TextStyle(fontSize:30,color: const Color.fromARGB(238, 255, 255, 255)),),
       ),
       body: Center(
         child: OutlinedButton(
@@ -30,7 +30,7 @@ class MyHomePage extends StatelessWidget {
             print("Button clicked");
           },
           style: OutlinedButton.styleFrom(
-            side:  BorderSide(color: Colors.blue, width: 2),
+            side:  BorderSide(color: const Color.fromARGB(255, 209, 19, 19), width: 5),
             padding:  EdgeInsets.symmetric(horizontal: 21, vertical: 12),
           ),
           child:  Text(
